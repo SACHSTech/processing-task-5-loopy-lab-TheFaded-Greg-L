@@ -1,5 +1,12 @@
 import processing.core.PApplet;
 
+/**
+* 
+* a program Sketch.java that is used to experiment with java nested loops in 8 different scenarios and their behaviours. 
+* @author: G. Lui
+*
+*/
+
 public class Sketch extends PApplet {
 	
 	
@@ -63,18 +70,20 @@ public class Sketch extends PApplet {
    * draws the bottom left section
    */
   public void draw_section1(){
+
     int intX = 0;
     int intY = 0;
 
     for(int intRow = 0; intRow < 30; intRow++){
+
       for(int intColumn = 0; intColumn < 30; intColumn++){
+
         intX = 3 + intRow * 300 / 30;  //Instead of zero, calculate the proper intX location using 'intRow'
         intY = 3 + 300 + intColumn * 300 / 30; //Instead of zero, calculate the proper intY location using 'intColumn'
 
         fill(255);
         noStroke();
         rect(intX, intY, 5, 5);
-
       }
     }
   }
@@ -89,6 +98,7 @@ public class Sketch extends PApplet {
     int sectTwoY = 0;
 
     for(int sectTwoRow = 0; sectTwoRow < 30; sectTwoRow++){
+
       for(int sectTwoColumn = 0; sectTwoColumn < 30; sectTwoColumn++){
 
         sectTwoX = 3 + 300 + sectTwoRow * 300 / 30;
@@ -119,6 +129,7 @@ public class Sketch extends PApplet {
     int sectThreeY = 0;
 
     for(int sectThreeRow = 0; sectThreeRow < 30; sectThreeRow++){
+
       for(int sectThreeColumn = 0; sectThreeColumn < 30; sectThreeColumn++){
 
         sectThreeX = 3 + 600 + sectThreeRow * 300 / 30;
@@ -148,6 +159,7 @@ public class Sketch extends PApplet {
     int sectFourY = 0;
 
     for(int sectFourRow = 0; sectFourRow < 30; sectFourRow++){
+
       for(int sectFourColumn = 0; sectFourColumn < 30; sectFourColumn++){
 
         sectFourX = 3 + 900 + sectFourRow * 300 / 30;
@@ -179,6 +191,7 @@ public class Sketch extends PApplet {
     int fiveCounterColumn = 0;
 
     for(int sectFiveColumn = 30; sectFiveColumn > fiveCounterColumn; sectFiveColumn--){
+
       for(int sectFiveRow = 30; sectFiveRow > fiveCounterRow; sectFiveRow--){
 
         sectFiveX = 3 - 10 + sectFiveRow * 300 / 30 ;
@@ -188,6 +201,7 @@ public class Sketch extends PApplet {
         noStroke();
         rect(sectFiveX, sectFiveY, 5, 5);
       }
+
       fiveCounterRow += 1;
     }
   }
@@ -200,6 +214,7 @@ public class Sketch extends PApplet {
     int sixCounterColumn = 0;
 
     for(int sectSixColumn = 30; sectSixColumn > sixCounterColumn; sectSixColumn--){
+
       for(int sectSixRow = 0; sectSixRow < sixCounterRow; sectSixRow++){
 
         sectSixX = 3 + 300 + sectSixRow * 300 / 30;
@@ -209,6 +224,7 @@ public class Sketch extends PApplet {
         noStroke();
         rect(sectSixX, sectSixY, 5, 5);
       }
+
       sixCounterRow -= 1;
     }
   }
@@ -221,6 +237,7 @@ public class Sketch extends PApplet {
     int sevenCounterColumn = 30;
 
     for(int sectSevenColumn = 0; sectSevenColumn < sevenCounterColumn; sectSevenColumn++){
+
       for(int sectSevenRow = 0; sectSevenRow < sevenCounterRow; sectSevenRow++){
 
         sectSevenX = 3 + 600 + sectSevenRow * 300 / 30;
@@ -230,6 +247,7 @@ public class Sketch extends PApplet {
         noStroke();
         rect(sectSevenX, sectSevenY, 5, 5);
       }
+
       sevenCounterRow -= 1;
     }
   }
@@ -242,6 +260,7 @@ public class Sketch extends PApplet {
     int eightCounterColumn = 30;
 
     for(int sectEightColumn = 0; sectEightColumn < eightCounterColumn; sectEightColumn++){
+
       for(int sectEightRow = 30; sectEightRow > eightCounterRow; sectEightRow--){
 
         sectEightX = 3 - 10 + 900 + sectEightRow * 300 / 30;
@@ -251,13 +270,8 @@ public class Sketch extends PApplet {
         noStroke();
         rect(sectEightX, sectEightY, 5, 5);
       }
+
       eightCounterRow += 1;
     }
   }
-
-
-
-
-
-
 }

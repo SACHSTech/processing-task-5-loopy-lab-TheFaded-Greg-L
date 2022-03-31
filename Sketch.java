@@ -94,26 +94,26 @@ public class Sketch extends PApplet {
    */
   public void draw_section2(){
 
-    int sectTwoX = 0;
-    int sectTwoY = 0;
+    int intSectTwoX = 0;
+    int intSectTwoY = 0;
 
-    for(int sectTwoRow = 0; sectTwoRow < 30; sectTwoRow++){
+    for(int intSectTwoRow = 0; intSectTwoRow < 30; intSectTwoRow++){
 
-      for(int sectTwoColumn = 0; sectTwoColumn < 30; sectTwoColumn++){
+      for(int intSectTwoColumn = 0; intSectTwoColumn < 30; intSectTwoColumn++){
 
-        sectTwoX = 3 + 300 + sectTwoRow * 300 / 30;
-        sectTwoY = 3 + 300 + sectTwoColumn * 300 / 30;
+        intSectTwoX = 3 + 300 + intSectTwoRow * 300 / 30;
+        intSectTwoY = 3 + 300 + intSectTwoColumn * 300 / 30;
 
-        if(sectTwoRow % 2 == 0){
+        if(intSectTwoRow % 2 == 0){
 
           fill(255);
           noStroke();
-          rect(sectTwoX, sectTwoY, 5, 5);
+          rect(intSectTwoX, intSectTwoY, 5, 5);
         } else {
 
           fill(0);
           noStroke();
-          rect(sectTwoX, sectTwoY, 5, 5);
+          rect(intSectTwoX, intSectTwoY, 5, 5);
         }
       }
     }
@@ -125,26 +125,26 @@ public class Sketch extends PApplet {
    */
   public void draw_section3(){
 
-    int sectThreeX = 0;
-    int sectThreeY = 0;
+    int intSectThreeX = 0;
+    int intSectThreeY = 0;
 
-    for(int sectThreeRow = 0; sectThreeRow < 30; sectThreeRow++){
+    for(int intSectThreeRow = 0; intSectThreeRow < 30; intSectThreeRow++){
 
-      for(int sectThreeColumn = 0; sectThreeColumn < 30; sectThreeColumn++){
+      for(int intSectThreeColumn = 0; intSectThreeColumn < 30; intSectThreeColumn++){
 
-        sectThreeX = 3 + 600 + sectThreeRow * 300 / 30;
-        sectThreeY = 3 + 300 + sectThreeColumn * 300 / 30;
+        intSectThreeX = 3 + 600 + intSectThreeRow * 300 / 30;
+        intSectThreeY = 3 + 300 + intSectThreeColumn * 300 / 30;
 
-        if(sectThreeColumn % 2 == 0){
+        if(intSectThreeColumn % 2 == 0){
 
           fill(0);
           noStroke();
-          rect(sectThreeX, sectThreeY, 5, 5);
+          rect(intSectThreeX, intSectThreeY, 5, 5);
         } else {
 
           fill(255);
           noStroke();
-          rect(sectThreeX, sectThreeY, 5, 5);
+          rect(intSectThreeX, intSectThreeY, 5, 5);
         }
       }
     }
@@ -155,26 +155,26 @@ public class Sketch extends PApplet {
    */
   public void draw_section4(){
 
-    int sectFourX = 0;
-    int sectFourY = 0;
+    int intSectFourX = 0;
+    int intSectFourY = 0;
 
-    for(int sectFourRow = 0; sectFourRow < 30; sectFourRow++){
+    for(int intSectFourRow = 0; intSectFourRow < 30; intSectFourRow++){
 
-      for(int sectFourColumn = 0; sectFourColumn < 30; sectFourColumn++){
+      for(int intSectFourColumn = 0; intSectFourColumn < 30; intSectFourColumn++){
 
-        sectFourX = 3 + 900 + sectFourRow * 300 / 30;
-        sectFourY = 3 + 300 + sectFourColumn * 300 / 30;
+        intSectFourX = 3 + 900 + intSectFourRow * 300 / 30;
+        intSectFourY = 3 + 300 + intSectFourColumn * 300 / 30;
 
-        if(sectFourColumn % 2 != 0 && sectFourRow % 2 == 0){
+        if(intSectFourColumn % 2 != 0 && intSectFourRow % 2 == 0){
 
           fill(255);
           noStroke();
-          rect(sectFourX, sectFourY, 5, 5);
+          rect(intSectFourX, intSectFourY, 5, 5);
         } else {
 
           fill(0);
           noStroke();
-          rect(sectFourX, sectFourY, 5, 5);
+          rect(intSectFourX, intSectFourY, 5, 5);
         }
       }
     }
@@ -185,93 +185,93 @@ public class Sketch extends PApplet {
    */
   public void draw_section5(){
 
-    int sectFiveX = 0;
-    int sectFiveY = 0;
-    int fiveCounterRow = 0;
-    int fiveCounterColumn = 0;
+    int intSectFiveX = 0;
+    int intSectFiveY = 0;
+    int intFiveCounterRow = 0;
+    int intFiveCounterColumn = 0;
 
-    for(int sectFiveColumn = 30; sectFiveColumn > fiveCounterColumn; sectFiveColumn--){
+    for(int intSectFiveColumn = 30; intSectFiveColumn > intFiveCounterColumn; intSectFiveColumn--){
 
-      for(int sectFiveRow = 30; sectFiveRow > fiveCounterRow; sectFiveRow--){
+      for(int intSectFiveRow = 30; intSectFiveRow > intFiveCounterRow; intSectFiveRow--){
 
-        sectFiveX = 3 - 10 + sectFiveRow * 300 / 30 ;
-        sectFiveY = 3 + sectFiveColumn * 300 / 30;
+        intSectFiveX = 3 - 10 + intSectFiveRow * 300 / 30 ;
+        intSectFiveY = 3 + intSectFiveColumn * 300 / 30;
 
         fill(255);
         noStroke();
-        rect(sectFiveX, sectFiveY, 5, 5);
+        rect(intSectFiveX, intSectFiveY, 5, 5);
       }
 
-      fiveCounterRow += 1;
+      intFiveCounterRow += 1;
     }
   }
 
   public void draw_section6(){
 
-    int sectSixX = 0;
-    int sectSixY = 0;
-    int sixCounterRow = 30;
-    int sixCounterColumn = 0;
+    int intSectSixX = 0;
+    int intSectSixY = 0;
+    int intSixCounterRow = 30;
+    int intSixCounterColumn = 0;
 
-    for(int sectSixColumn = 30; sectSixColumn > sixCounterColumn; sectSixColumn--){
+    for(int intSectSixColumn = 30; intSectSixColumn > intSixCounterColumn; intSectSixColumn--){
 
-      for(int sectSixRow = 0; sectSixRow < sixCounterRow; sectSixRow++){
+      for(int intSectSixRow = 0; intSectSixRow < intSixCounterRow; intSectSixRow++){
 
-        sectSixX = 3 + 300 + sectSixRow * 300 / 30;
-        sectSixY = 3 - 10 + sectSixColumn * 300 / 30;
+        intSectSixX = 3 + 300 + intSectSixRow * 300 / 30;
+        intSectSixY = 3 - 10 + intSectSixColumn * 300 / 30;
 
         fill(255);
         noStroke();
-        rect(sectSixX, sectSixY, 5, 5);
+        rect(intSectSixX, intSectSixY, 5, 5);
       }
 
-      sixCounterRow -= 1;
+      intSixCounterRow -= 1;
     }
   }
 
   public void draw_section7(){
 
-    int sectSevenX = 0;
-    int sectSevenY = 0;
-    int sevenCounterRow = 30;
-    int sevenCounterColumn = 30;
+    int intSectSevenX = 0;
+    int intSectSevenY = 0;
+    int intSevenCounterRow = 30;
+    int intSevenCounterColumn = 30;
 
-    for(int sectSevenColumn = 0; sectSevenColumn < sevenCounterColumn; sectSevenColumn++){
+    for(int intSectSevenColumn = 0; intSectSevenColumn < intSevenCounterColumn; intSectSevenColumn++){
 
-      for(int sectSevenRow = 0; sectSevenRow < sevenCounterRow; sectSevenRow++){
+      for(int intSectSevenRow = 0; intSectSevenRow < intSevenCounterRow; intSectSevenRow++){
 
-        sectSevenX = 3 + 600 + sectSevenRow * 300 / 30;
-        sectSevenY = 3 + sectSevenColumn * 300 / 30;
+        intSectSevenX = 3 + 600 + intSectSevenRow * 300 / 30;
+        intSectSevenY = 3 + intSectSevenColumn * 300 / 30;
 
         fill(255);
         noStroke();
-        rect(sectSevenX, sectSevenY, 5, 5);
+        rect(intSectSevenX, intSectSevenY, 5, 5);
       }
 
-      sevenCounterRow -= 1;
+      intSevenCounterRow -= 1;
     }
   }
   
   public void draw_section8(){
 
-    int sectEightX = 0;
-    int sectEightY = 0;
-    int eightCounterRow = 0;
-    int eightCounterColumn = 30;
+    int intSectEightX = 0;
+    int intSectEightY = 0;
+    int intEightCounterRow = 0;
+    int intEightCounterColumn = 30;
 
-    for(int sectEightColumn = 0; sectEightColumn < eightCounterColumn; sectEightColumn++){
+    for(int intSectEightColumn = 0; intSectEightColumn < intEightCounterColumn; intSectEightColumn++){
 
-      for(int sectEightRow = 30; sectEightRow > eightCounterRow; sectEightRow--){
+      for(int intSectEightRow = 30; intSectEightRow > intEightCounterRow; intSectEightRow--){
 
-        sectEightX = 3 - 10 + 900 + sectEightRow * 300 / 30;
-        sectEightY = 3 + sectEightColumn * 300 / 30;
+        intSectEightX = 3 - 10 + 900 + intSectEightRow * 300 / 30;
+        intSectEightY = 3 + intSectEightColumn * 300 / 30;
 
         fill(255);
         noStroke();
-        rect(sectEightX, sectEightY, 5, 5);
+        rect(intSectEightX, intSectEightY, 5, 5);
       }
 
-      eightCounterRow += 1;
+      intEightCounterRow += 1;
     }
   }
 }
